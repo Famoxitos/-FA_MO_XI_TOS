@@ -1,0 +1,225 @@
+body{
+	/* background-image es para imagen de fondo*/
+	background-image:url("../IMAGENES/fondo9.jpg");
+	/* font-family es para tipografia*/
+	font-family:"Arial Rounded MT Bold"," Times New Roman";
+	/* color es para el color de las letras*/
+	color:#17202A;
+	/* font-size es para el tamaño de las letras indicando pixeles*/
+	font-size:40px;
+	text-align:center;
+}
+hr{
+	/*boder es para la linea el grosor indica en pixeles,
+	indicamos tipo de linea y el codigo del color*/
+	border:3px solid #A2D9CE;
+	/*width es para el ancho de la linea*/
+	width:30%;
+	/*boder-radius es para agregar una curva al final*/
+	border-radius:5px;
+}
+p{
+	text-align:justify;
+	font-size:25px;
+	color:#424949;
+	line-height:1.5;
+	/* Espacio en cada letra*/
+	background-color:#D0ECE7;
+	letter-spacing:1px;
+}
+table,tr,td{
+	border:1px solid #A2D9CE;
+	border-spacing:0px;
+	background-color:#ABEBC6;
+	/* Atributos para el texto o contenido de la tabla*/
+	font-size:15px;
+	text-align:center;
+	color:#424949;
+}
+/* Clase para los pie de pagina*/
+.pie{
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	color:#212F3C ;
+}
+.encabezado{
+	text-align:center;
+	font-size:35px;
+	font-weight:bold;
+	color:#212F3C;
+	font-family:fuente-ggg;
+}
+/* Divs*/
+div#top{
+	font-family:fuente-game;
+	font-size:60px;
+	width:100%;
+	height:75px;
+	background-image:linear-gradient(#D0ECE7,#A2D9CE);
+}
+div#hellopie{
+	width:100%;
+	height:100px;
+	background-image:radial-gradient(#D0ECE7,#A2D9CE);
+}
+/* Carrousel de imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box; 
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows>i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller>a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows>a>i{
+	color:white;
+}
+/* Caja para productos*/
+.caja{
+	height:300px;
+	width:250px;
+	background:#D0ECE7;
+	border:1px solid#73C6B6;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow: 0 0 10 px blue;
+	transform: scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:19px;
+	color:black;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:17px;
+}
+.texto-adicionalfoto{
+	padding-top:5px;
+	font-size:30px;
+	background-color:#D0ECE7;
+}
+/* Menu de navegacion*/
+.navegacion{
+	display:flex;
+	height:100px;
+	font-family:fuente-extra;
+}
+.navegacion-item{
+	flex:1;
+	color:#17202A;
+	font-weight:bold;
+	font-size:18px;
+	display:flex;
+	transition:flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#A3E4D7;
+}
+.navegacion-item:nth-child(2){
+	background:#A2D9CE;
+}
+.navegacion-item:nth-child(3){
+	background:#A9DFBF;
+}
+.navegacion-item:nth-child(4){
+	background:#ABEBC6;
+}
+.cua{
+	text-align:center;
+	display:flex;
+	border:5px solid #A2D9CE;
+	padding:50px;
+	max-width:700px;
+	background-color:#D0ECE7
+}
+.image{
+	width:250px;
+	height:180px;
+	background-image:url("../IMAGENES/logo.jpg");
+	background-size:cover;
+	background-position:center;
+	margin-right:20px;
+}
+.text{
+	font-size:25px;
+}
+.navegacion-itemq{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/* fuentes tipograficas*/
+@font-face{
+	font-family:fuente-game;
+	src: url(../FUENTES/GameBubble.ttf);
+}
+@font-face{
+	font-family:fuente-ggg;
+	src: url(../FUENTES/SweetCreamy2.ttf);
+}
+@font-face{
+	font-family:fuente-extra;
+	src: url(../FUENTES/BlinkyStar.otf);
+}
